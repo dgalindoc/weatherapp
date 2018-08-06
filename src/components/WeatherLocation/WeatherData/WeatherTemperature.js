@@ -20,15 +20,15 @@ const stateToIconName = (weatherState) => {
   }
 }
 
-const getWeatherIcon = (weatherState) => (
-  <WeatherIcons name={stateToIconName(weatherState)} size="2x" />
-);
+const getWeatherIcon = weatherState => {
+  return (<WeatherIcons className="wicon" name={stateToIconName(weatherState)} size="4x" />)
+}
 
 const WeatherTemperature = ({temperature, weatherState}) => (
   <div className='weatherTemperatureCont'>
   {getWeatherIcon(weatherState)}
-
-    <span>{`${temperature}ºC`}</span>
+    <span className='temperture'>{`${temperature}`}</span>
+    <span className="temperatureType">ºC</span>
   </div>
 );
 

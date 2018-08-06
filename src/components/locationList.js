@@ -3,9 +3,9 @@ import WeatherLocation from './WeatherLocation';
 
 const locationList = () => (
   <div>
-    <WeatherLocation city={'Barcelona,es'} />
-    <WeatherLocation city={'Madrid,es'} />
-    <WeatherLocation city={'Cordoba,es'} />
+    <WeatherLocation city={'Vigo,es'} cityName={'Vigo'}/>
+    <WeatherLocation city={'Madrid,es'} cityName={'Madrid'}/>
+    <WeatherLocation city={'Bilbao,es'} cityName={'Bilbao'}/>
   </div>
 );
 

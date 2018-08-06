@@ -7,17 +7,16 @@ import './style.css';
 import transformWeather from './../../services/transformWeather';
 
 const url = 'http://api.openweathermap.org/data/2.5/weather';
-const city = 'Madrid,es';
 const appId = 'fee2406037c8c12feeb4f2d00649351a';
-const api_weather = `${url}?q=${city}&APPID=${appId}`;
 
 class WeatherLocation extends Component {
 
-  constructor({city}) {
+  constructor({city, cityName}) {
     super();
     this.state = {
       city,
-      data: null
+      data: null,
+      cityName
     }
   }
 
@@ -42,10 +41,10 @@ class WeatherLocation extends Component {
   }
 
   render = () => {
-    const { city, data } = this.state;
+    const { data, cityName } = this.state;
     return (
       <div className = "weatherLocationCont">
-        <Location city={city}/>
+        <Location city={cityName}/>
         {data ? <WeatherData data={data}/> : <CircularProgress color="primary" />}
 
       </div>

@@ -6,15 +6,26 @@ const cities = [
   'Vigo,es',
   'Barcelona,es',
   'Madrid,es',
-  'Vigo,es',
   'Roma,it',
 ];
 
 class App extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
+  handleSelectedLocation = (city) => {
+    console.log(`hendleSelectedLocation ${city}`);
+  }
+
   render() {
     return (
       <div className="App">
-        <WeatherLocationList cities={cities} />
+        <WeatherLocationList
+          cities={cities}
+          onSelectedLocation={this.handleSelectedLocation}
+        />
       </div>
     );
   }

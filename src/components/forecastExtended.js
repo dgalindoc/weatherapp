@@ -55,7 +55,7 @@ class forecastExtended extends React.PureComponent {
     return (
       <div className="forecastContainer">
         <h2 className="forecastTitle">
-          {'Info '}
+          {'Previsión en: '}
           {city}
         </h2>
         {forecastData

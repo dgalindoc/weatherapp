@@ -28,7 +28,6 @@
 }
 
 .detail{
-  background-color: #ffd4d4;
   height:80vh;
   width:calc(100% - 40px);
   overflow: auto;

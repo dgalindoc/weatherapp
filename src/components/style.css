@@ -1,7 +1,17 @@
-@media (max-width: 64em) {
+@media (max-width: 48em) {
   .locationList{
-    max-height:50vh;
-    overflow:auto;
+    height:40vh!important;
     margin-bottom:20px;
   }
+}
+
+.locationList{
+  height:85vh;
+  overflow:auto;
+}
+
+.forecastTitle{
+  color:white;
+  text-align: center;
+  padding:10px 0;
 }

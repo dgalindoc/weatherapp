@@ -10,10 +10,15 @@
   margin: 0;
 }
 .weatherLocationCont{
-  min-width: 430px;
-  width:calc(100% - 100px);
-  margin:30px 30px;
+  width:calc(100% - 80px);
+  margin:0px 30px 30px 30px;
   padding:25px;
   font-family: 'Roboto', sans-serif;
   box-shadow: 10px 10px 42px -12px rgba(0,0,0,0.75);
+  cursor:pointer;
+}
+@media (max-width: 64em) {
+  .weatherLocationCont{
+    width: auto;
+  }
 }

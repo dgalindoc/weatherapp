@@ -21,7 +21,7 @@ class App extends React.PureComponent {
   constructor(props) {
     super(props);
     this.props = props;
-    this.state = { city: 'Nueva City' };
+    this.state = { city: null };
   }
 
   handleSelectedLocation = (city) => {
@@ -56,7 +56,7 @@ class App extends React.PureComponent {
           <Col xs={12} md={6}>
             <Paper elevation={4}>
               <div className="detail">
-                <ForecastExtended city={city} />
+                {city && <ForecastExtended city={city} /> }
               </div>
             </Paper>
           </Col>

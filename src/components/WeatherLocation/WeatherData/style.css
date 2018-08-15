@@ -11,7 +11,7 @@
   display:inline-block;
 }
 .temperature{
-  font-size: 35px;
+  font-size: 34px;
   font-weight: bold;
   padding-left: 20px;
   color: #333333;
@@ -34,6 +34,18 @@
 .extraInfoText{
   display:block;
   color:#1535C5;
-  font-size:18px;
+  font-size:14px;
   font-weight:bold;
+}
+
+@media (max-width: 48em) {
+  .extraInfoText{
+    font-size:14px;
+  }
+  .temperature{
+    font-size: 28px;
+  }
+  .wicon{
+     font-size: 3em!important;
+  }
 }

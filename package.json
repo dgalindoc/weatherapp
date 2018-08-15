@@ -3,11 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.1",
+    "convert-units": "^2.3.4",
+    "material-ui": "^0.20.2",
+    "moment": "^2.22.2",
     "prop-types": "^15.6.1",
-    "react": "^16.2.0",
+    "react": "^16.4.2",
     "react-dom": "^16.2.0",
+    "react-flexbox-grid": "^2.1.2",
     "react-scripts": "1.1.1",
     "react-weathericons": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-react-native-web": "^0.8.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0"
   },
   "scripts": {
     "start": "react-scripts start",
